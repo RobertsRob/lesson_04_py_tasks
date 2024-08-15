@@ -48,9 +48,35 @@ for i in range(len(text)):
         print(text[i])
 
 # 7.task
+# Запросите у пользователя строку и создайте новую строку, где каждый символ исходной строки повторяется дважды.
+text = input("Введите строку: ")
+result = ""
+for i in range(len(text)):
+    result += text[i] * 2
+print(result)
 
 # 8.task
+# Запросите у пользователя строку и символ, затем найдите и выведите индекс первого вхождения этого символа в строке.
+text = input("Введите строку: ")
+char = input("Введите символ для поиска: ")
+index = -1
+for i in range(len(text)):
+    if text[i] == char:
+        index = i
+        break
+print("Индекс первого вхождения:", index)
 
 # 9.task
+# Запросите у пользователя строку и проверьте, является ли эта строка палиндромом (читается одинаково с обеих сторон).
+text = input("Введите строку: ")
+is_palindrome = True
+for i in range(len(text) // 2):
+    if text[i] != text[-(i + 1)]:
+        is_palindrome = False
+        break
+print("Палиндром:", is_palindrome)
 
 # 10.task
+
+
+
